@@ -1,0 +1,26 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "@apps/next-app-1:dev": "pnpm -F @apps/next-app-1 dev",
+    "@apps/next-app-1:build": "pnpm -F @apps/next-app-1 build",
+    "@apps/next-app-1:lint": "pnpm -F @apps/next-app-1 lint",
+    "@apps/next-app-1:test": "pnpm -F @apps/next-app-1 test",
+
+    "@apps/next-app-2:dev": "pnpm -F @apps/next-app-2 dev",
+    "@apps/next-app-2:build": "pnpm -F @apps/next-app-2 build",
+    "@apps/next-app-2:lint": "pnpm -F @apps/next-app-2 lint",
+
+    "@packages/ui-lib:lint": "pnpm -F @packages/ui-lib lint",
+
+    "g:lint": "pnpm -r lint",
+    "g:build": "pnpm -r build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
